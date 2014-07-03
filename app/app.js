@@ -7,6 +7,6 @@ app.config(['$httpProvider', function($httpProvider) {
   delete $httpProvider.defaults.headers.common['X-Requested-With'];
 }]);
 
-app.controller('test', function($scope, billsService) {
+app.controller('bills', function($scope, billsService) {
   billsService.getAllBills();
 });
