@@ -1,0 +1,26 @@
+{
+  "name": "dinero",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Jason Hamm",
+  "license": "ISC",
+  "scripts": {
+    "install": "napa"
+  },
+  "napa": {
+    "angular": "angular/bower-angular",
+    "angular-resource": "angular/bower-angular-resource"
+  },
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "browserify": "^4.2.0",
+    "connect": "^2.21.1",
+    "express": "^3.5.1",
+    "express-validator": "^2.3.0",
+    "gulp": "^3.8.5",
+    "napa": "^0.4.1",
+    "pg.js": "^3.3.0",
+    "vinyl-source-stream": "^0.1.1"
+  }
+}
