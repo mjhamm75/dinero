@@ -39,7 +39,13 @@ exports.getAllBills = function(req, res) {
   'use strict';
   var bills = new Bills();
   bills.fetch().then(function(data) {
-    res.json(data.toJSON());
+    var r = {
+      meta: {
+        count: data.toJSON().length
+      },
+      bills: data.toJSON()
+    };
+    res.json(r);
   });
 };
 
