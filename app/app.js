@@ -4,8 +4,6 @@ require('./bills/bills.module.js');
 
 var billsTemplate = require('./bills/bills.html');
 
-console.log(billsTemplate);
-
 var app = angular.module('dinero', ['bills', 'ngRoute']);
 
 app.config(['$httpProvider', function($httpProvider) {
@@ -13,13 +11,10 @@ app.config(['$httpProvider', function($httpProvider) {
   delete $httpProvider.defaults.headers.common['X-Requested-With'];
 }]);
 
-app.config(['$routeProvider', function($routeProvider) {
+app.config(['$routeProvider', function($routeProvider, BillsController) {
   $routeProvider
     .when('/bills', {
-      template: billsTemplate
+      template: billsTemplate,
+      controller: 'billsController'
     });
 }]);
-
-app.controller('bills', function($scope, billsService) {
-  billsService.getAllBills();
-});
