@@ -10,7 +10,8 @@
   },
   "napa": {
     "angular": "angular/bower-angular",
-    "angular-resource": "angular/bower-angular-resource"
+    "angular-resource": "angular/bower-angular-resource",
+    "angular-route": "angular/bower-angular-route"
   },
   "dependencies": {
     "body-parser": "^1.4.3",
@@ -23,6 +24,7 @@
     "knex": "^0.6.20",
     "napa": "^0.4.1",
     "pg.js": "^3.3.0",
+    "stringify": "^2.2.0",
     "vinyl-source-stream": "^0.1.1"
   }
 }

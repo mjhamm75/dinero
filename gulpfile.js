@@ -1,5 +1,6 @@
 var gulp = require("gulp");
 var browserify = require('browserify');
+var stringify = require('stringify');
 var source = require('vinyl-source-stream');
 var connect = require('connect');
 var http = require('http');
@@ -21,6 +22,7 @@ gulp.task('watch', function() {
 
 gulp.task('browserify', function() {
   return browserify('./app/app.js')
+    .transform(stringify(['.html']))
     .bundle()
     .pipe(source('app.js'))
     .pipe(gulp.dest('./build'));
