@@ -1,4 +1,4 @@
-var dndController = function() {
+var dndDirectiveSingle = function() {
     return function(scope, element, attrs) {
 
         // variables used for dnd
@@ -38,4 +38,4 @@ var dndController = function() {
 
 };
 
-module.exports = dndController;
+module.exports = dndDirectiveSingle;
