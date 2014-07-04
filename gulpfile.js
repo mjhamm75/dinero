@@ -23,7 +23,7 @@ gulp.task('watch', function() {
 gulp.task('browserify', function() {
   return browserify('./app/app.js')
     .transform(stringify(['.html']))
-    .bundle()
+    .bundle({debug: true})
     .pipe(source('app.js'))
     .pipe(gulp.dest('./build'));
 });
