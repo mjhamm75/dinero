@@ -1,10 +1,11 @@
 require('angular/angular');
 require('angular-route/angular-route');
 require('./bills/bills.module.js');
+require('./dnd/dnd.module.js');
 
 var billsTemplate = require('./bills/bills.html');
 
-var app = angular.module('dinero', ['bills', 'ngRoute']);
+var app = angular.module('dinero', ['bills', 'dnd', 'ngRoute']);
 
 app.config(['$httpProvider', function($httpProvider) {
   $httpProvider.defaults.useXDomain = true;
