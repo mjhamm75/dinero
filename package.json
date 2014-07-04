@@ -8,16 +8,12 @@
   "scripts": {
     "install": "napa"
   },
-  "napa": {
-    "angular": "angular/bower-angular",
-    "angular-resource": "angular/bower-angular-resource",
-    "angular-route": "angular/bower-angular-route"
-  },
   "dependencies": {
     "body-parser": "^1.4.3",
     "bookshelf": "^0.7.6",
     "bootstrap": "^3.2.0",
     "browserify": "^4.2.0",
+    "browserify-shim": "^3.6.0",
     "connect": "^2.21.1",
     "express": "^3.5.1",
     "express-validator": "^2.3.0",
@@ -27,5 +23,10 @@
     "pg.js": "^3.3.0",
     "stringify": "^2.2.0",
     "vinyl-source-stream": "^0.1.1"
+  },
+  "napa": {
+    "angular": "angular/bower-angular",
+    "angular-resource": "angular/bower-angular-resource",
+    "angular-route": "angular/bower-angular-route"
   }
 }
