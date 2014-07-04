@@ -1,3 +1,6 @@
 node_modules
 build
 ./build
+.idea/.name
+.idea/workspace.xml
+app/.DS_Store
