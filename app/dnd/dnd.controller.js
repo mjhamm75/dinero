@@ -1,3 +1,5 @@
-/**
- * Created by mjhamm75 on 7/3/14.
- */
+var DndController = function() {
+
+};
+
+module.exports = DndController;
