@@ -1,4 +1,4 @@
-var DndDirective = require('./dnd.directive.js');
+var DndDirective = require('./dnd.directive.single.js');
 var DndController = require('./dnd.controller.js');
 
 var app = angular.module('dnd', []);
