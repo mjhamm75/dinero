@@ -6,6 +6,14 @@ var DndController = function($scope) {
             }).join(','));
         }
     },true);
+
+    $scope.$watch("other", function(value) {
+        if(value !== undefined) {
+            console.log("BillsOther: " + value.map(function(e) {
+              return e.id;
+            }).join(','));
+        }
+    },true);
 };
 
 module.exports = DndController;
