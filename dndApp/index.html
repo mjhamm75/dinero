@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="dnd">
+<body>
+<div class="container" id="main"  ng-controller="dndCtrl">
+    <div class="row">
+        <div class="span4 offset2">
+            <ul id="sourceList" dnd-between-list="source,targetList">
+                <li class="alert alert-error nomargin"
+                    ng-repeat="item in source">{{item.value}}</li>
+            </ul>
+        </div>
+        <div class="span4">
+            <ul id="targetList" dnd-between-list="model,sourceList">
+                <li class="alert alert-info nomargin"
+                    ng-repeat="item in model">{{item.value}}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- load all the scripts -->
+<script src="./../node_modules/jquery/dist/jquery.js"></script>
+<script src="./../node_modules/jquery-ui/jquery-ui.js"></script>
+<script src="./../node_modules/angular.js" type="text/javascript"></script>
+<script src="./../node_modules/dist/js/bootstrap.js" type="text/javascript"></script>
+
+<!-- load the app scripts -->
+<script src="app.js" type="text/javascript"></script>
+<script src="dir-dnd.js" type="text/javascript"></script>
+<script src="ctrl-dnd.js" type="text/javascript"></script>
+
+</body>
+</html>
