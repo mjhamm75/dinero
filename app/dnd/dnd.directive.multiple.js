@@ -57,8 +57,8 @@ var DndDirectiveMultiple = function($parse) {
                 scope.$apply(args[0]);
             },
             connectWith:'#'+args[1]
-        })
-    }
+        });
+    };
 };
 
 module.exports = DndDirectiveMultiple;
