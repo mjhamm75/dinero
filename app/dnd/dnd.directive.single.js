@@ -33,8 +33,8 @@ var dndDirectiveSingle = function() {
                 scope.$apply(scope.model);
             },
             axis:'y'
-        })
-    }
+        });
+    };
 
 };
 
