@@ -4,7 +4,9 @@ var DndDirectiveMultiple = function($parse) {
         // contains the args for this component
         var args = attrs.dndBetweenList.split(',');
         // contains the args for the target
-        var targetArgs = $('#'+args[1]).attr('dnd-between-list').split(',');
+
+        var el = $('#' + args[1].trim());
+        var targetArgs = el.attr('dnd-between-list').split(',');
 
         // variables used for dnd
         var toUpdate;
@@ -56,7 +58,7 @@ var DndDirectiveMultiple = function($parse) {
                 scope.$apply(targetArgs[0]);
                 scope.$apply(args[0]);
             },
-            connectWith:'#'+args[1]
+            connectWith:'#'+args[1].trim()
         });
     };
 };

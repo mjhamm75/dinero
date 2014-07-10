@@ -2,13 +2,13 @@
 <div class="container" ng-controller="dndController">
     <div class="row">
       <div class="col-md-4">
-          <ul class="list-unstyled" dnd-list="bills">
+          <ul id="sourceList" class="list-unstyled" dnd-between-list="bills, targetList">
             <li class="alert alert-info nomargin" ng-repeat="bill in bills">{{bill.name}} {{bill.payment}}</li>
         </ul>
       </div>
 
       <div class="col-md-4">
-        <ul class="list-unstyled" dnd-list="other">
+        <ul id="targetList" class="list-unstyled" dnd-between-list="other, sourceList">
             <li class="alert alert-warning nomargin" ng-repeat="o in other">{{o.name}} {{o.total}}</li>
         </ul>
       </div>

@@ -4,5 +4,5 @@ var DndController = require('./dnd.controller.js');
 
 var app = angular.module('dnd', []);
 app.directive('dndList', DndDirective);
-app.directive('dndLists', DndListsDirective);
+app.directive('dndBetweenList', DndListsDirective);
 app.controller('dndController', DndController);
