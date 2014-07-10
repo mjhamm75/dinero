@@ -1,8 +1,8 @@
 <h1>Jason Hamm</h1>
-<div class="container" ng-controller="dndController">
-    <div class="row">
+<div class="container row" ng-controller="dndController">
+    <div class="col-md-4">
         <ul class="list-unstyled" dnd-list="bills">
-            <li ng-repeat="bill in bills">{{bill.name}} {{bill.payment}}</li>
+            <li class="alert alert-info nomargin" ng-repeat="bill in bills">{{bill.name}} {{bill.payment}}</li>
         </ul>
     </div>
 </div>
